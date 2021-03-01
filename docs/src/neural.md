@@ -62,5 +62,5 @@ neural = NeuralSurrogate(x, y, lb, ub, model = model1, n_echos = 10)
 ## Optimization
 We can now call an optimization function on the neural network:
 ```@example Neural_surrogate
-surrogate_optimize(schaffer, SRBF(), lower_bound, upper_bound, neura, SobolSample(), maxiters=20, num_new_samples=10)
+surrogate_optimize(schaffer, SRBF(), lower_bound, upper_bound, neural, SobolSample(), maxiters=20, num_new_samples=10)
 ```
